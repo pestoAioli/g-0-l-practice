@@ -96,10 +96,10 @@ export default function Home() {
 
   return (
     <>
-      <button onClick={() => {
+      <button style={{ fontSize: 36, margin: 6 }} onClick={() => {
         getNextGeneration();
       }}>Next generation    </button>
-      <button onClick={() => {
+      <button style={{ fontSize: 36, margin: 6 }} onClick={() => {
         setRunning(!running);
         if (!running) {
           runningRef.current = true;
